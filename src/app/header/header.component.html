@@ -2,5 +2,18 @@
   <div fxFlex='30'>
     logo here
   </div>
-  <div fxflex>Navigation</div>
+  <div fxflex>
+    <router-outlet>
+      <ul>
+        <li>
+          <a routerLink="/">Home</a>
+
+        </li>
+        <li>
+          <a routerLink="/about">About</a>
+
+        </li>
+      </ul>
+    </router-outlet>
+</div>
 </header>
