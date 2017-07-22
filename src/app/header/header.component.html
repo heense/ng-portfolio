@@ -1,19 +1,16 @@
 <header fxFill>
   <div fxFlex='30'>
-    logo here
+    <a routerLink="/" id="logo">Logo here</a>
   </div>
-  <div fxflex>
-    <router-outlet>
-      <ul>
+  <div fxFlex='70'>
+
+      <ul fxLayout="row" fxLayoutAlign="end center">
         <li>
           <a routerLink="/">Home</a>
-
         </li>
         <li>
           <a routerLink="/about">About</a>
-
         </li>
       </ul>
-    </router-outlet>
-</div>
+  </div>
 </header>
