@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { Meta, Title } from '@angular/platform-browser';
 
 @Component({
   selector: 'app-home',
@@ -7,8 +8,21 @@ import { Component, OnInit } from '@angular/core';
 })
 export class HomeComponent implements OnInit {
 
-  constructor() { }
+  constructor(meta: Meta, title: Title) {
+    title.setTitle('My awsome home page');
 
+    meta.addTags([
+      {
+        name: 'author', content: 'Name.com'
+      },
+      {
+        name: 'keywords', content: 'Some fancy keywords '
+      },
+      {
+        name: 'description', content: 'A cool description'
+      }
+    ]);
+  }
   ngOnInit() {
   }
 
